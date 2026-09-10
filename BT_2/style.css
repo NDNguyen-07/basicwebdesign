@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f5f7ff;
+    color: #333;
+}
+
+nav {
+    background: #6c63ff;
+    padding: 18px;
+    text-align: center;
+}
+
+nav h2 {
+    color: white;
+    display: inline;
+    margin-right: 40px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+nav a:hover {
+    color: #ffe66d;
+}
+
+.home {
+    text-align: center;
+    padding: 150px 20px;
+}
+
+.home h1 {
+    font-size: 45px;
+    color: #6c63ff;
+}
+
+.btn {
+    display: inline-block;
+    background: #6c63ff;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.content {
+    width: 80%;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.content h1 {
+    color: #6c63ff;
+    font-size: 35px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cards div, .product {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px #ddd;
+}
+
+.cards div:hover {
+    transform: translateY(-5px);
+    background: #eeeaff;
+}
+
+.product {
+    max-width: 500px;
+    margin: auto;
+}

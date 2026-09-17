@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+img {
+    position :relative;
+    width: 200px;
+    height: 200px;
+}
+.card1 , .card2, .card3 ,.card4 {
+    position:relative;
+    
+}
+.sale1 {
+    position:absolute;
+    background-color:yellow;
+    top: 0;
+    right: 0;
+}
+.sale2 {
+    position:absolute;
+    background-color:yellow;
+    top: 0;
+    /* left: 0; */
+    right:1px;
+}
+/* .sale3 {
+    position:absolute;
+    background-color:yellow;
+    bottom: 0;
+    right: 0;
+}
+.sale4 {
+    position:absolute;
+    background-color:yellow;
+    bottom: 0;
+    left: 0;
+} */
+ .sale3 {
+    position:absolute;
+    background-color:yellow;
+    bottom: 190px;
+    right: 0;
+    top:-1px;   
+}
+.sale4 {
+    position:absolute;
+    background-color:yellow;
+    bottom: 190px;
+    left:175px;
+    top:-1px;
+}

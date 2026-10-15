@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý sản phẩm</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <h1>Sản phẩm mới</h1>
+    <hr />
+    <form name="frm">
+        <p>
+            <label>
+                Tên sản phẩm
+                <input type="text" name="pname" id="pname" placeholder="VD: Quần tây" />
+            </label>
+            <label>
+                Số lượng
+                <input type="text" name="qty" id="qty" placeholder="VD: 15" />
+            </label>
+        </p>
+        <p>
+            <label>
+                Đơn giá
+                <input type="text" name="up" id="up" placeholder="VD: 50000" />
+            </label>
+            <label>
+                Giảm giá (%)
+                <input type="text" name="dc" id="dc" placeholder="VD: 10" />
+            </label>
+        </p>
+        <p>
+            <button type="button" onclick="sell()">Bán</button>
+            <button type="button">Hủy</button>
+        </p>
+    </form>
+
+    <table id="tbl">
+        <tr>
+            <th>ID</th>
+            <th>TÊN SẢN PHẨM</th>
+            <th>SỐ LƯỢNG</th>
+            <th>ĐƠN GIÁ</th>
+            <th>GIẢM GIÁ</th>
+            <th>TỔNG PHỤ</th>
+        </tr>
+    </table>
+
+    <script src="shop.js"></script>
+</body>
+</html>

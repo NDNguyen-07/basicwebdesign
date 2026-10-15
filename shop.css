@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Giới hạn chiều rộng tối đa cho toàn bộ Form và Bảng */
+form[name="frm"], table#tbl {
+    max-width: 650px; /* Điều chỉnh số này nhỏ hơn nếu muốn hẹp hơn nữa */
+    width: 100%;
+}
+
+form[name="frm"] {
+    margin-bottom: 20px;
+}
+
+form[name="frm"] p {
+    margin-bottom: 10px;
+}
+
+form[name="frm"] label {
+    margin-right: 20px;
+}
+
+form[name="frm"] input[type="text"] {
+    padding: 4px 8px;
+    margin-left: 5px;
+}
+
+button {
+    padding: 5px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Định dạng bảng kẻ viền thu gọn */
+table#tbl {
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table#tbl th, table#tbl td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: left;
+}
+
+table#tbl th {
+    background-color: #f2f2f2;
+}

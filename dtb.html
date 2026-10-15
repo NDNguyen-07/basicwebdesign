@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính điểm trung bình</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="dtb.css">
+    <script src="dtb.js" defer></script>
+</head>
+<body>
+
+    <div class="card">
+        <div class="card-header">
+            <h2>Tính Điểm Trung Bình</h2>
+            <p>Nhập điểm các học kỳ để xét kết quả học tập</p>
+        </div>
+
+        <form id="scoreForm" onsubmit="return false;">
+            <div class="form-group">
+                <label for="hk1">Điểm Học kỳ 1</label>
+                <input type="number" id="hk1" step="0.1" min="0" max="10" placeholder="Ví dụ: 8.5" autofocus>
+            </div>
+
+            <div class="form-group">
+                <label for="hk2">Điểm Học kỳ 2</label>
+                <input type="number" id="hk2" step="0.1" min="0" max="10" placeholder="Ví dụ: 7.0">
+            </div>
+
+            <button type="button" id="btnCalculate" onclick="checkdiem()">Tính Điểm Trung Bình</button>
+        </form>
+
+        <div class="result-container">
+            <div class="result-item">
+                <span class="result-label">Điểm trung bình:</span>
+                <span id="diemTB" class="result-value">-</span>
+            </div>
+            <div class="result-item">
+                <span class="result-label">Xếp loại:</span>
+                <span id="xl" class="result-value badge">-</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
